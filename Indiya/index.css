@@ -19,9 +19,11 @@ ul {
   color: red;
   font-size: 30px;
   margin-right: 600px;
+  text-decoration: none;
 }
 footer ul {
-  color: black;
-  margin-top: 550px;
-  padding-top: 20px;
+  margin-top: 500px;
+  background-color: gray;
+  box-sizing: border-box;
+  color: aquamarines;
 }
