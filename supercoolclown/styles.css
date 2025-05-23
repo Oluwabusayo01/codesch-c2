@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: grey;
+    padding: 20px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.name a{
+    color: red;
+    font-size: 30px;
+    margin-right: 550px;
+}
+.container {
+    background-color: grey;
+}
+.container p {
+    text-align: center;
+}
+
