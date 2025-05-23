@@ -1,0 +1,27 @@
+* {
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  border: 2px solid green;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: center;
+}
+.name a {
+  color: red;
+  font-size: 30px;
+  margin-right: 600px;
+}
+footer ul {
+  color: black;
+  margin-top: 550px;
+  padding-top: 20px;
+}
