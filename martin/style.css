@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.box {
+  position: relative;
+  background-color: indigo;
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+
+.box img {
+  /* background-color: indigo; */
+}
+
+.small {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
+  top: 50px;
+  left: 50px;
+}
+
+/* .img1 {
+  position: absolute;
+  width: 100px;
+  right: 440px;
+  top: 70px;
+} */
+
+.div2 {
+  position: fixed;
+  background-color: red;
+  width: 100%;
+  padding: 20px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+.grid div {
+  background-color: rgb(18, 158, 135);
+  padding: 20px;
+  /* margin: 10px; */
+  border: 1px solid #ccc;
+}
+
+.item1 {
+  /* grid-column: 1 / span 2; */
+}
+
+.item4 {
+  grid-row: 2 / span 2;
+}
+
+.div3 {
+  font-size: 50px;
+}
+
+@media (max-width: 1024px) {
+  body {
+    background-color: green;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: yellow;
+  }
+
+  .div3 {
+    font-size: 20px;
+    color: blue;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 0 20px;
+  }
+
+  .item1 {
+    grid-column: 1 / span 1;
+  }
+
+  .item4 {
+    grid-row: 1 / span 1;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* @media (max-width: 500px) {
+  body {
+    background-color: pink;
+  }
+} */
+
+.animated-box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  position: absolute;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin: 100px 200px;
+  top: 50px;
+  left: 50px;
+  transition: transform 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  animation: rotatebox linear infinite;
+  animation-duration: 5s;
+}
+
+@keyframes rotatebox {
+  0% {
+    transform: rotate(0deg);
+    background-color: aqua;
+  }
+  20% {
+    transform: rotate(72deg);
+    background-color: blue;
+  }
+  40% {
+    transform: rotate(144deg);
+    background-color: green;
+  }
+  60% {
+    transform: rotate(216deg);
+    background-color: yellow;
+  }
+  80% {
+    transform: rotate(288deg);
+    background-color: orange;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: darkmagenta;
+  }
+}

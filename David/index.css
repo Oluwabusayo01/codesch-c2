@@ -1,0 +1,67 @@
+ul {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 30px;
+    /* border: 2px solid black; */
+    /* margin-top: 40px; */
+    padding: 50px ;
+    text-decoration: none;
+    border-radius: 40px;
+    
+}
+header {
+    background-color: gray;
+}
+body {
+    background-color: black;
+}
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+}
+li {
+    list-style: none;
+    text-decoration: none;
+}
+.name a{
+    color: black;
+    font-size: 50px;
+    margin-right: 800px;
+    list-style: none;
+    
+    text-decoration: none;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+}
+footer {
+    background-color:red;
+    text-align: left;
+    list-style: none;
+    padding: 1px;
+}
+.number{
+    text-align: right;
+    list-style: none;
+    margin: 10px;
+}
+p {
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+    margin: 1px;
+    color: orange;
+}
+.Number {
+    list-style-type: none;
+    text-decoration: none;
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}
+ul li :hover {
+    color: peru;
+}
