@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 12 Complete Demo - Functions, Scope & DOM</title>
+    <link rel="stylesheet" href="./session_three.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🚀 Day 12 Complete Demo</h1>
+            <p>Functions, Scope, DOM Manipulation & Interactive Elements</p>
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-tab="functions">Functions</button>
+            <button class="nav-tab" data-tab="scope">Scope</button>
+            <button class="nav-tab" data-tab="dom">DOM Manipulation</button>
+            <button class="nav-tab" data-tab="interactive">Interactive Project</button>
+        </div>
+
+        <!-- Functions Section -->
+        <div id="functions" class="content-section active">
+            <h2 class="section-title">🔧 Functions Demonstration</h2>
+
+            <div class="demo-card">
+                <h3>Basic Function Examples</h3>
+                <button class="btn btn-primary" onclick="demonstrateBasicFunctions()">Run Basic Functions</button>
+                <div id="basic-functions-output" class="output-area"></div>
+            </div>
+
+            <div class="demo-card">
+                <h3>Functions with Parameters</h3>
+                <div class="form-group">
+                    <label>Your Name:</label>
+                    <input type="text" id="user-name" class="form-control" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label>Time of Day:</label>
+                    <select id="time-of-day" class="form-control">
+                        <option value="morning">Morning</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                    </select>
+                </div>
+                <button class="btn btn-success" onclick="greetUser()">Greet Me!</button>
+                <div id="greeting-output" class="output-area"></div>
+            </div>
+
+            <div class="demo-card">
+                <h3>Functions with Return Values</h3>
+                <div class="form-group">
+                    <label>Number 1:</label>
+                    <input type="number" id="num1" class="form-control" value="10">
+                </div>
+                <div class="form-group">
+                    <label>Number 2:</label>
+                    <input type="number" id="num2" class="form-control" value="5">
+                </div>
+                <button class="btn btn-info" onclick="performCalculations()">Calculate</button>
+                <div id="calculation-output" class="output-area"></div>
+            </div>
+        </div>
+
+        <!-- Scope Section -->
+        <div id="scope" class="content-section">
+            <h2 class="section-title">🔍 Scope Demonstration</h2>
+
+            <div class="demo-card">
+                <h3>Global vs Local Scope</h3>
+                <button class="btn btn-warning" onclick="demonstrateScope()">Show Scope Examples</button>
+                <div id="scope-output" class="output-area"></div>
+            </div>
+
+            <div class="demo-card">
+                <h3>Block Scope with let and const</h3>
+                <button class="btn btn-info" onclick="demonstrateBlockScope()">Show Block Scope</button>
+                <div id="block-scope-output" class="output-area"></div>
+            </div>
+
+            <div class="demo-card">
+                <h3>Scope Chain Example</h3>
+                <div class="scope-demo">
+                    <p><strong>Global Variable:</strong> <span id="global-var-display">globalMessage = "I'm
+                            global!"</span></p>
+                </div>
+                <button class="btn btn-primary" onclick="demonstrateScopeChain()">Test Scope Chain</button>
+                <div id="scope-chain-output" class="output-area"></div>
+            </div>
+        </div>
+
+        <!-- DOM Manipulation Section -->
+        <div id="dom" class="content-section">
+            <h2 class="section-title">🌐 DOM Manipulation</h2>
+
+            <div class="demo-card">
+                <h3>Element Selection and Content Manipulation</h3>
+                <p id="demo-paragraph">This is a demo paragraph that will be modified.</p>
+                <button class="btn btn-primary" onclick="changeContent()">Change Content</button>
+                <button class="btn btn-secondary" onclick="resetContent()">Reset</button>
+            </div>
+
+            <div class="demo-card">
+                <h3>Style Manipulation</h3>
+                <div class="color-box" id="style-demo-box">Click buttons to change my style!</div>
+                <button class="btn btn-danger" onclick="changeBoxColor('#e74c3c', 'Red Box')">Red</button>
+                <button class="btn btn-success" onclick="changeBoxColor('#27ae60', 'Green Box')">Green</button>
+                <button class="btn btn-info" onclick="changeBoxColor('#3498db', 'Blue Box')">Blue</button>
+                <button class="btn btn-warning" onclick="changeBoxColor('#f39c12', 'Orange Box')">Orange</button>
+            </div>
+
+            <div class="demo-card">
+                <h3>CSS Class Manipulation</h3>
+                <p id="class-demo-text">This text will change classes dynamically.</p>
+                <button class="btn btn-primary" onclick="toggleHighlight()">Toggle Highlight</button>
+                <button class="btn btn-success" onclick="toggleBigText()">Toggle Big Text</button>
+                <button class="btn btn-danger" onclick="toggleBold()">Toggle Bold</button>
+            </div>
+
+            <div class="demo-card">
+                <h3>Creating New Elements</h3>
+                <div class="form-group">
+                    <label>Element Text:</label>
+                    <input type="text" id="new-element-text" class="form-control"
+                        placeholder="Enter text for new element">
+                </div>
+                <button class="btn btn-success" onclick="createElement()">Add Paragraph</button>
+                <button class="btn btn-info" onclick="createButton()">Add Button</button>
+                <button class="btn btn-danger" onclick="clearCreated()">Clear All</button>
+                <div id="created-elements-container"></div>
+            </div>
+        </div>
+
+        <!-- Interactive Project Section -->
+        <div id="interactive" class="content-section">
+            <h2 class="section-title">🎮 Interactive Mini-Projects</h2>
+
+            <div class="demo-card">
+                <h3>Click Counter with Progress</h3>
+                <div class="counter-display" id="click-counter">0</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <button class="btn btn-primary" onclick="incrementCounter()">Click Me!</button>
+                <button class="btn btn-secondary" onclick="resetCounter()">Reset</button>
+                <p><small>Goal: Reach 20 clicks!</small></p>
+            </div>
+
+            <div class="demo-card">
+                <h3>Simple Task Manager</h3>
+                <div class="form-group">
+                    <input type="text" id="task-input" class="form-control" placeholder="Enter a task..."
+                        maxlength="50">
+                    <button class="btn btn-success" onclick="addTask()" style="margin-top: 10px;">Add Task</button>
+                </div>
+                <div id="task-list"></div>
+                <button class="btn btn-danger" onclick="clearAllTasks()">Clear All Tasks</button>
+            </div>
+
+            <div class="demo-card">
+                <h3>Random Quote Generator</h3>
+                <div id="quote-display"
+                    style="font-style: italic; font-size: 1.2rem; margin: 20px 0; padding: 20px; background: #f8f9fa; border-left: 4px solid #007bff;">
+                    Click the button to get an inspiring quote!
+                </div>
+                <button class="btn btn-info" onclick="generateQuote()">Get New Quote</button>
+                <p><small>Quotes generated: <span id="quote-counter">0</span></small></p>
+            </div>
+        </div>
+    </div>
+    <script src="./session_three.js"></script>
+</body>
+
+</html>
