@@ -5,7 +5,7 @@ const data = (data) => {
 
 const quote = fetch("https://api.kanye.rest")
   .then(data)
-  .then((data) => console.log(data))
+  .then((data) => console.log(data.quote))
   .catch((error) => console.error(error));
 
 // console.log(quote)
