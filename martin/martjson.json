@@ -1,0 +1,39 @@
+{
+  "employee": [
+    {
+      "firstName": "Martin",
+      "lastName": "Doe",
+      "age": 30,
+      "department": "Engineering",
+      "skills": ["Javascript", "Python", "Rust"]
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "age": 25,
+      "department": "Marketing",
+      "skills": ["SEO", "Content Writing", "Social Media"]
+    },
+    {
+      "firstName": "Emily",
+      "lastName": "Johnson",
+      "age": 35,
+      "department": "Sales",
+      "skills": ["Negotiation", "CRM", "Public Speaking"]
+    },
+    {
+      "firstName": "Michael",
+      "lastName": "Brown",
+      "age": 40,
+      "department": "Human Resources",
+      "skills": ["Recruitment", "Employee Relations", "Training"]
+    },
+    {
+      "firstName": "musa",
+      "lastName": "destiny",
+      "age": 10,
+      "department": "teacher",
+      "skills": ["amebo", "computer", "soldier"]
+    }
+  ]
+}

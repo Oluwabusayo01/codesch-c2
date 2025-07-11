@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link href="./index.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="quote-container">
+        <div class="quote-icon">💭</div>
+        <div class="quote-text" id="quoteText">
+            Click the button below to get inspired with a random quote!
+        </div>
+        <div class="quote-author" id="quoteAuthor" style="display: none;">
+            
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-primary" id="newQuoteBtn">
+                ✨ New Quote
+            </button>
+            <button class="btn btn-secondary" id="copyQuoteBtn">
+                📋 Copy Quote
+            </button>
+            <button class="btn btn-secondary" id="tweetQuoteBtn">
+                🐦 Tweet
+            </button>
+        </div>
+    </div>
+
+    <div class="success-message" id="successMessage">
+        Quote copied to clipboard! 📋
+    </div>
+
+   <script src="./index.js"></script>
+</body>
+</html>

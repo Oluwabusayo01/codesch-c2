@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: grey;
+
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+.name a{
+    color: red;
+    font-size: 30px;
+    margin-right: 350px;
+}
+
+footer{
+    background-color: red;
+    padding: 30px;
+}
