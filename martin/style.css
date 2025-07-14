@@ -32,6 +32,31 @@ body {
   margin-bottom: 70px;
 }
 
+.formbox {
+  padding: 20px;
+  font-size: xx-large;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.formbox input {
+  width: 100%;
+  padding: 15px;
+  font-size: xx-large;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#submit {
+  background-color: rebeccapurple;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 #user {
   color: rebeccapurple;
 }
